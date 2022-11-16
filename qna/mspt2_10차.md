@@ -195,3 +195,7 @@ spec:
 - `k`는 alias인가요?
   - 네, 맞습니다.
   - kubectl 설치 후 간편한 사용(alias, auto-completion)을 위한 환경설정은 [리눅스에서 bash 자동 완성 사용하기](https://kubernetes.io/ko/docs/tasks/tools/included/optional-kubectl-configs-bash-linux/)를 참고하세요.
+
+- Deployment & ReplicaSet  yaml 파일에서 labels: 부분에 "app: my-nginx" 가 중복해서 많이 사용되어 헷갈리는데요.
+  해당 라벨은 동일 yaml 내에서만 selector: 에서 참조되는 용도인 건지요?
+  kubectl get 에서 조회되는 Name 부분은 kind: 와 metadata: 에 있는 name: 정보 조합으로 보여지는 건지 궁금합니다.
